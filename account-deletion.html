@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Cancellazione account e dati — GigScout</title>
+<style>
+  :root{--bg:#0f1115;--card:#171a21;--fg:#e8e8ea;--muted:#a0a3ad;--acc:#7c5cff;--line:#272b35;--ok:#1e3a2a;--okfg:#8ce0a8}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:24px}
+  h1{font-size:1.6rem;margin:0 0 6px}
+  h2{font-size:1.2rem;margin:30px 0 8px;color:#fff}
+  a{color:var(--acc)}
+  .meta{color:var(--muted);font-size:.92rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0}
+  .step{display:flex;gap:12px;margin:10px 0}
+  .num{flex:0 0 28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.93rem}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#1d212b}
+  .ok{color:var(--okfg)}
+  .btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:10px 16px;border-radius:8px;font-weight:600;margin-top:6px}
+  code{background:#1d212b;padding:1px 5px;border-radius:4px;font-size:.9em}
+  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.88rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Cancellazione dell'account e dei dati — GigScout</h1>
+  <p class="meta">Sviluppatore: Paolo Marchionetti · App: GigScout (<code>com.paolomarchionetti.gigscout</code>)</p>
+</header>
+
+<p>Questa pagina spiega come richiedere la <strong>cancellazione del tuo account GigScout e dei dati associati</strong>. Puoi farlo in due modi.</p>
+
+<h2>Metodo 1 — Direttamente dall'app (consigliato, immediato)</h2>
+<div class="card">
+  <div class="step"><div class="num">1</div><div>Apri <strong>GigScout</strong> ed esegui l'accesso.</div></div>
+  <div class="step"><div class="num">2</div><div>Vai su <strong>Impostazioni</strong>.</div></div>
+  <div class="step"><div class="num">3</div><div>Tocca <strong>Elimina account</strong> e conferma.</div></div>
+  <div class="step"><div class="num">4</div><div>La cancellazione è <strong>immediata e irreversibile</strong>.</div></div>
+</div>
+
+<h2>Metodo 2 — Via email (se non riesci ad accedere)</h2>
+<p>Se non puoi accedere all'app, invia una richiesta dall'indirizzo email associato al tuo account a:</p>
+<p><a class="btn" href="mailto:privacy@gigscout.app?subject=%5BGDPR%5D%20Richiesta%20cancellazione%20account%20GigScout&amp;body=Chiedo%20la%20cancellazione%20del%20mio%20account%20GigScout%20e%20dei%20dati%20associati.%20Email%20account%3A%20">Richiedi cancellazione via email</a></p>
+<p class="meta">Oggetto consigliato: <code>[GDPR] Richiesta cancellazione account GigScout</code>. Per verificare l'identità potremmo chiederti di confermare dall'email registrata. Evadiamo la richiesta entro <strong>30 giorni</strong>.</p>
+
+<h2>Quali dati vengono eliminati</h2>
+<table>
+<tr><th>Dato</th><th>Esito</th></tr>
+<tr><td>Account e credenziali (email, hash password)</td><td class="ok">Eliminati</td></tr>
+<tr><td>Profilo (nome, bio, città, foto, generi, link)</td><td class="ok">Eliminati</td></tr>
+<tr><td>Contenuti pubblicati (eventi, recensioni, commenti, foto)</td><td class="ok">Eliminati</td></tr>
+<tr><td>Messaggi diretti e messaggi nei gruppi</td><td class="ok">Eliminati</td></tr>
+<tr><td>File caricati nello storage (foto profilo/eventi/post)</td><td class="ok">Eliminati</td></tr>
+<tr><td>Token notifiche, follow, blocchi, partecipazioni</td><td class="ok">Eliminati</td></tr>
+</table>
+
+<h2>Dati eventualmente conservati e per quanto</h2>
+<table>
+<tr><th>Dato</th><th>Conservazione</th><th>Motivo</th></tr>
+<tr><td>Backup del database</td><td>Rimossi entro <strong>30 giorni</strong></td><td>Backup rolling del provider</td></tr>
+<tr><td>Log tecnici/di sicurezza (es. IP)</td><td>Fino a <strong>12 mesi</strong></td><td>Sicurezza e obblighi di legge (legittimo interesse)</td></tr>
+<tr><td>Citazioni di contenuti pubblici già visti da altri (es. reply già lette in chat)</td><td>Possono persistere</td><td>Integrità delle conversazioni altrui</td></tr>
+</table>
+
+<p>Per ulteriori dettagli sul trattamento consulta la nostra <a href="privacy.html">Informativa sulla Privacy</a>. Per altre richieste GDPR (accesso, portabilità/export dei dati, rettifica) scrivi a <a href="mailto:privacy@gigscout.app">privacy@gigscout.app</a>.</p>
+
+<footer>
+  GigScout · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Termini di Servizio</a>
+</footer>
+</div>
+</body>
+</html>
